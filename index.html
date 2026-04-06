@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Arqueología de Guatemala</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <style>
+        #map { height: 600px; width: 100%; }
+        body { font-family: sans-serif; margin: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Catálogo de Sitios Arqueológicos</h1>
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        // Centrar el mapa en Guatemala
+        var map = L.map('map').setView([15.5, -90.5], 7);
+
+        // Capa de OpenStreetMap (con calles y nombres de municipios)
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap'
+        }).addTo(map);
+
+        // Cargar tu archivo mapa.geojson automáticamente
+        fetch('mapa.geojson')
+            .then(response => response.json())
+            .then(data => {
+                L.geoJSON(data, {
+                    onEachFeature: function (feature, layer) {
+                        layer.bindPopup("<b>" + feature.properties.name + "</b><br>" + feature.properties.municipio);
+                    }
+                }).addTo(map);
+            });
+    </script>
+</body>
+</html>
