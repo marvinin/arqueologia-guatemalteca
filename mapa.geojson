@@ -1,0 +1,16 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ajaw Pasaos",
+        "municipio": "Rabinal"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-90.48, 15.10]
+      }
+    }
+  ]
+}
