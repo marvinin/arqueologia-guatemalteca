@@ -12,8 +12,8 @@ juego_pelota: 1
 tipo_cancha: "Palangana"
 plazas: 1
 edificios_ubicados: 6
-arte_rupestre: No
-monumentos: No
+arte_rupestre: "Sin información"
+monumentos: "Sin información"
 ---
 
 # Ajaw Pasaos (El Sauce)
