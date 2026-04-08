@@ -1,34 +1,73 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Arqueología de Guatemala</title>
+    <title>Arqueología de Guatemala - Catálogo</title>
+    <meta charset="utf-8" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <style>
-        #map { height: 600px; width: 100%; }
-        body { font-family: sans-serif; margin: 20px; }
+        body { margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; display: flex; height: 100vh; }
+        
+        /* Estilo de la barra lateral */
+        #sidebar { width: 300px; background: #f8f9fa; border-right: 1px solid #ddd; overflow-y: auto; padding: 20px; box-shadow: 2px 0 5px rgba(0,0,0,0.1); z-index: 1000; }
+        
+        /* Estilo del mapa */
+        #map { flex-grow: 1; height: 100%; }
+
+        h1 { font-size: 1.2rem; color: #2c3e50; border-bottom: 2px solid #27ae60; padding-bottom: 10px; }
+        .site-item { padding: 10px; border-bottom: 1px solid #eee; cursor: pointer; transition: background 0.2s; }
+        .site-item:hover { background: #e9ecef; }
+        .site-item b { color: #27ae60; }
+        .municipio-tag { font-size: 0.8rem; color: #7f8c8d; display: block; }
     </style>
 </head>
 <body>
-    <h1>Catálogo de Sitios Arqueológicos</h1>
+
+    <div id="sidebar">
+        <h1>Sitios: Depto. Guatemala</h1>
+        <div id="site-list">
+            <p>Cargando sitios...</p>
+        </div>
+    </div>
+
     <div id="map"></div>
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
-        // Centrar el mapa en Guatemala
-        var map = L.map('map').setView([15.5, -90.5], 7);
+        // Inicializar mapa centrado en el departamento de Guatemala
+        var map = L.map('map').setView([14.63, -90.51], 10);
 
-        // Capa de OpenStreetMap (con calles y nombres de municipios)
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '© OpenStreetMap'
         }).addTo(map);
 
-        // Cargar tu archivo mapa.geojson automáticamente
+        var markers = {}; // Para guardar referencia a los puntos
+
+        // Cargar el GeoJSON que genera tu script de Python
         fetch('mapa.geojson')
-            .then(response => response.json())
+            .then(res => res.json())
             .then(data => {
+                var listContainer = document.getElementById('site-list');
+                listContainer.innerHTML = ''; // Limpiar mensaje de carga
+
                 L.geoJSON(data, {
                     onEachFeature: function (feature, layer) {
-                        layer.bindPopup("<b>" + feature.properties.name + "</b><br>" + feature.properties.municipio);
+                        var props = feature.properties;
+                        var coords = feature.geometry.coordinates;
+
+                        // 1. Crear el elemento en la lista lateral
+                        var div = document.createElement('div');
+                        div.className = 'site-item';
+                        div.innerHTML = `<b>${props.name}</b><span class="municipio-tag">${props.municipio || 'Sin municipio'}</span>`;
+                        
+                        // 2. Al hacer clic en la lista, ir al punto en el mapa
+                        div.onclick = function() {
+                            map.flyTo([coords[1], coords[0]], 15);
+                            layer.openPopup();
+                        };
+                        listContainer.appendChild(div);
+
+                        // 3. Configurar el popup del marcador
+                        layer.bindPopup(`<b>${props.name}</b><br><a href="${props.url}">Ver detalles de la ficha</a>`);
                     }
                 }).addTo(map);
             });
