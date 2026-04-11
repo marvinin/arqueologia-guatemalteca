@@ -53,6 +53,5 @@
         "coordinates": [-90.53, 14.62]
       }
     }
-    /* ... El resto de los 76 sitios se cargarán igual mediante el script de Python ... */
   ]
 }
