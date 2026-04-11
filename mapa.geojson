@@ -4,13 +4,55 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Ajaw Pasaos",
-        "municipio": "Rabinal"
+        "name": "Arqueológico Kaminal Juyú",
+        "registro": "1.1.8.24",
+        "municipio": "Guatemala",
+        "url": "sitios/guatemala/arqueologico-kaminal-juyu.html"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-90.48, 15.10]
+        "coordinates": [-90.53, 14.62]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Arqueológico Acatan",
+        "registro": "1.1.8.1",
+        "municipio": "Guatemala",
+        "url": "sitios/guatemala/arqueologico-acatan.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-90.53, 14.62]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Arqueológico Miraflores",
+        "registro": "1.1.8.28",
+        "municipio": "Guatemala",
+        "url": "sitios/guatemala/arqueologico-miraflores.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-90.53, 14.62]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Arqueológico La Culebra",
+        "registro": "1.1.8.15",
+        "municipio": "Guatemala",
+        "url": "sitios/guatemala/arqueologico-la-culebra.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-90.53, 14.62]
       }
     }
+    /* ... El resto de los 76 sitios se cargarán igual mediante el script de Python ... */
   ]
 }
