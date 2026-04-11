@@ -1,41 +1,31 @@
 ---
-id_registro: "1.1.8.1"
-nombre_sitio: "Acatán"
-nombre_alterno: "Sin información"
+id_registro: "15.3.8.1"
+nombre_sitio: "Ajaw Pasaos"
+nombre_alterno: "El Sauce"
 region: "Tierras Altas"
-municipio: "Guatemala"
-departamento: "Guatemala"
-temporalidad: "Sin información"
-primer_reporte: 1942
-investigadores: "Edwin Shook"
+municipio: "Rabinal"
+departamento: "Baja Verapaz"
+temporalidad: "Clásico"
+primer_reporte: 1988
+investigadores: "Legión Franco-Guatemalteca"
 juego_pelota: 1
 tipo_cancha: "Palangana"
-plazas: "Sin información
-edificios_ubicados: 3
+plazas: 1
+edificios_ubicados: 6
 arte_rupestre: "Sin información"
 monumentos: "Sin información"
 ---
 
-# Acatán
+# Ajaw Pasaos (El Sauce)
 
 ## Antecedentes de Investigación
-Este sitio fue visitado inicialmente por E. Shook en 1942. Posteriormente se realizó un recorrido de reconocimiento por parte de M. Corado (2006).
-Este sitio no fue incluido en la publicación oficial de sitios arqueológicos del Altiplano Meridional Central de Guatemala, probablemente porque Shook no pudo confirmar la autenticidad de la
-evidencia encontrada en el sitio, ya que los montículos que observó probablemente provenían de material de disturbio producido por la construcción de un camino o carretera.
-## Arquitectura y Configuración Espacial Ajaw Pasaos se distingue por no presentar el conjunto típico de una plaza postclásica. Su configuración principal incluye:
+El sitio fue reportado por primera vez en **1988** por la **Misión Franco-Guatemalteca**. Se le identifica en la literatura arqueológica también con el nombre de **El Sauce**. 
 
-## Principales Hallazgos
-De acuerdo con Corado, en la zona recorrida se observó escaso material arqueológico sobre la superficie.
+## Arquitectura y Configuración Espacial
+Ajaw Pasaos se distingue por no presentar el conjunto típico de una plaza postclásica. Su configuración principal incluye:
 
-## Historia del desarrollo del sitio
-El informe de E. Shook indica que el sitio está ubicado dentro de la reserva hidráulica conocida como Teosinte, por lo que es posible que la evidencia arqueológica se encuentre protegida dentro de esta
-reserva.
+* **Edificio de Marca:** Una estructura aislada sobre un cerrito (11 x 7 x 2.50 m).
+* **Plataformas:** Dos estructuras rectangulares de 14 metros de largo.
+* **Cancha de Juego de Pelota:** Una cancha tipo "palangana" (23 x 7 m).
 
-
-* **Distribución:** Sin información.
-* **Arquitecturaa:** Sin información.
-
-> Corado Mena, Maria de Los Ángeles. 2008. Reconocimiento arqueológico en el departamento de Guatemala. Universidad del Valle de Guatemala. Pp-48
-Corado, María. 2011. Actualización de sitios arqueológicos del departamento de Guatemala. Pellecer, L. “El Archivo de Edwin Shook, un legado a preservar”. Centro de Investigaciones
-regionales de Mesoamerica.2011 Escobar Durand, Claudine. (2015) El Patrimonio Arqueológico en el marco del Plan de Ordenamiento Territorial del Municipio de Guatemala". Tesis de Licenciatura, Universidad
-de San Carlos de Guatemala. Guatemala. Pp. 65. Shook, E. (1942) Ficha de Registro arqueológico. CIRMA
+> "El conjunto no es típico de una plaza postclásica. Más bien Ajaw Pasaos sería un 'sitio de marca'..." (Arnauld, 1993:104).
