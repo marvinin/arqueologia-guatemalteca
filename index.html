@@ -63,26 +63,33 @@
 
         // 2. Función para cargar y mostrar el Markdown (El Visor)
         function verFicha(urlRelativa) {
-            // Ajustamos la ruta para asegurarnos de leer el archivo .md
-            const urlMD = urlRelativa.replace('.html', '.md');
-            
-            fetch(urlMD)
-                .then(res => {
-                    if (!res.ok) throw new Error("No se encontró el archivo");
-                    return res.text();
-                })
-                .then(text => {
-                    // Quitamos el encabezado YAML (lo que está entre ---)
-                    const cleanText = text.replace(/^---[\s\S]*?---/, '');
-                    // Convertimos a HTML
-                    document.getElementById('contenido-ficha').innerHTML = marked.parse(cleanText);
-                    document.getElementById('ficha-container').style.display = 'block';
-                })
-                .catch(err => {
-                    console.error(err);
-                    alert("Error al cargar la ficha técnica de Acatán. Revisa que el archivo .md exista en la carpeta.");
-                });
-        }
+    // 1. Aseguramos que la extensión sea .md
+    let urlMD = urlRelativa.replace('.html', '.md');
+
+    // 2. IMPORTANTE: Forzamos la ruta desde la raíz si no tiene el slash inicial
+    if (!urlMD.startsWith('/')) {
+        // Obtenemos el nombre del repositorio de la URL actual
+        const repoName = window.location.pathname.split('/')[1];
+        urlMD = '/' + repoName + '/' + urlMD;
+    }
+    
+    console.log("Intentando cargar:", urlMD); // Esto te dirá en la consola qué ruta está buscando
+
+    fetch(urlMD)
+        .then(res => {
+            if (!res.ok) throw new Error("Error " + res.status + ": No se encontró el archivo en " + urlMD);
+            return res.text();
+        })
+        .then(text => {
+            const cleanText = text.replace(/^---[\s\S]*?---/, '');
+            document.getElementById('contenido-ficha').innerHTML = marked.parse(cleanText);
+            document.getElementById('ficha-container').style.display = 'block';
+        })
+        .catch(err => {
+            console.error(err);
+            alert("Error: " + err.message);
+        });
+}
 
         // 3. Cargar Datos del GeoJSON
         fetch('mapa.geojson')
