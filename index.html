@@ -4,13 +4,13 @@
     <title>Arqueología de Guatemala - Catálogo</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    
     <style>
         body { margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; display: flex; height: 100vh; }
         
-        /* Estilo de la barra lateral */
         #sidebar { width: 300px; background: #f8f9fa; border-right: 1px solid #ddd; overflow-y: auto; padding: 20px; box-shadow: 2px 0 5px rgba(0,0,0,0.1); z-index: 1000; }
         
-        /* Estilo del mapa */
         #map { flex-grow: 1; height: 100%; }
 
         h1 { font-size: 1.2rem; color: #2c3e50; border-bottom: 2px solid #27ae60; padding-bottom: 10px; }
@@ -18,6 +18,23 @@
         .site-item:hover { background: #e9ecef; }
         .site-item b { color: #27ae60; }
         .municipio-tag { font-size: 0.8rem; color: #7f8c8d; display: block; }
+
+        /* Estilos del Visor de Ficha */
+        #ficha-container { 
+            display:none; 
+            position:fixed; 
+            top:10%; 
+            left:15%; 
+            width:70%; 
+            height:80%; 
+            background:white; 
+            z-index:2000; 
+            padding:30px; 
+            border-radius:10px; 
+            box-shadow: 0 0 30px rgba(0,0,0,0.5); 
+            overflow-y:auto; 
+        }
+        #contenido-ficha img { max-width: 100%; height: auto; } /* Para tus fotos de la GoPro */
     </style>
 </head>
 <body>
@@ -31,43 +48,72 @@
 
     <div id="map"></div>
 
+    <div id="ficha-container">
+        <button onclick="document.getElementById('ficha-container').style.display='none'" style="float:right; background:#e74c3c; color:white; border:none; padding:10px 15px; cursor:pointer; border-radius:5px; font-weight:bold;">Cerrar ✕</button>
+        <div id="contenido-ficha"></div>
+    </div>
+
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
-        // Inicializar mapa centrado en el departamento de Guatemala
-        var map = L.map('map').setView([14.63, -90.51], 10);
-
+        // 1. Configuración del Mapa
+        var map = L.map('map').setView([14.63, -90.51], 12);
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '© OpenStreetMap'
         }).addTo(map);
 
-        var markers = {}; // Para guardar referencia a los puntos
+        // 2. Función para cargar y mostrar el Markdown (El Visor)
+        function verFicha(urlRelativa) {
+            // Ajustamos la ruta para asegurarnos de leer el archivo .md
+            const urlMD = urlRelativa.replace('.html', '.md');
+            
+            fetch(urlMD)
+                .then(res => {
+                    if (!res.ok) throw new Error("No se encontró el archivo");
+                    return res.text();
+                })
+                .then(text => {
+                    // Quitamos el encabezado YAML (lo que está entre ---)
+                    const cleanText = text.replace(/^---[\s\S]*?---/, '');
+                    // Convertimos a HTML
+                    document.getElementById('contenido-ficha').innerHTML = marked.parse(cleanText);
+                    document.getElementById('ficha-container').style.display = 'block';
+                })
+                .catch(err => {
+                    console.error(err);
+                    alert("Error al cargar la ficha técnica de Acatán. Revisa que el archivo .md exista en la carpeta.");
+                });
+        }
 
-        // Cargar el GeoJSON que genera tu script de Python
+        // 3. Cargar Datos del GeoJSON
         fetch('mapa.geojson')
             .then(res => res.json())
             .then(data => {
                 var listContainer = document.getElementById('site-list');
-                listContainer.innerHTML = ''; // Limpiar mensaje de carga
+                listContainer.innerHTML = '';
 
                 L.geoJSON(data, {
                     onEachFeature: function (feature, layer) {
                         var props = feature.properties;
                         var coords = feature.geometry.coordinates;
 
-                        // 1. Crear el elemento en la lista lateral
+                        // Crear item en la lista lateral
                         var div = document.createElement('div');
                         div.className = 'site-item';
-                        div.innerHTML = `<b>${props.name}</b><span class="municipio-tag">${props.municipio || 'Sin municipio'}</span>`;
+                        div.innerHTML = `<b>${props.name}</b><span class="municipio-tag">${props.municipio || 'Guatemala'}</span>`;
                         
-                        // 2. Al hacer clic en la lista, ir al punto en el mapa
                         div.onclick = function() {
                             map.flyTo([coords[1], coords[0]], 15);
                             layer.openPopup();
                         };
                         listContainer.appendChild(div);
 
-                        // 3. Configurar el popup del marcador
-                        layer.bindPopup(`<b>${props.name}</b><br><a href="${props.url}">Ver detalles de la ficha</a>`);
+                        // Crear Popup con botón para el Visor
+                        layer.bindPopup(`
+                            <div style="text-align:center">
+                                <b>${props.name}</b><br>
+                                <button onclick="verFicha('${props.url}')" style="margin-top:10px; cursor:pointer; background:#27ae60; color:white; border:none; padding:5px 10px; border-radius:3px;">Ver Ficha Técnica</button>
+                            </div>
+                        `);
                     }
                 }).addTo(map);
             });
