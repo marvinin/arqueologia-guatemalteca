@@ -1,20 +1,3 @@
----
-id_registro: "15.3.8.1"
-nombre_sitio: "Ajaw Pasaos"
-nombre_alterno: "El Sauce"
-region: "Tierras Altas"
-municipio: "Rabinal"
-departamento: "Baja Verapaz"
-temporalidad: "Clásico"
-primer_reporte: 1988
-investigadores: "Legión Franco-Guatemalteca"
-juego_pelota: 1
-tipo_cancha: "Palangana"
-plazas: 1
-edificios_ubicados: 6
-arte_rupestre: "Sin información"
-monumentos: "Sin información"
----
 
 # Ajaw Pasaos (El Sauce)
 
