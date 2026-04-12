@@ -23,7 +23,7 @@
         "name": "Arqueológico Aeropuerto",
         "registro": "1.1.8.2",
         "municipio": "Guatemala",
-        "url": "sitios/Guatemala/arqueologico-aeropuerto.md"
+        "url": "sitios/Guatemala/sitioaeropuerto.md"
       },
       "geometry": {
         "type": "Point",
@@ -39,7 +39,7 @@
         "name": "Arqueológico Los Arcos",
         "registro": "1.1.8.3",
         "municipio": "Guatemala",
-        "url": "sitios/Guatemala/arqueologico-los-arcos.md"
+        "url": "sitios/Guatemala/sitiolosarcos.md"
       },
       "geometry": {
         "type": "Point",
@@ -55,7 +55,7 @@
         "name": "Arqueológico Aurora",
         "registro": "1.1.8.4",
         "municipio": "Guatemala",
-        "url": "sitios/Guatemala/arqueologico-aurora.md"
+        "url": "sitios/Guatemala/sitioaurora.md"
       },
       "geometry": {
         "type": "Point",
