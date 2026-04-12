@@ -4,7 +4,7 @@ nombre_sitio: "Ajaw Pasaos"
 nombre_alterno: "El Sauce"
 region: "Tierras Altas"
 municipio: "Rabinal"
-departamento: "Baja Verapaz"``
+departamento: "Baja Verapaz"
 temporalidad: "Clásico"
 primer_reporte: 1988
 investigadores: "Legión Franco-Guatemalteca"
