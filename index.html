@@ -62,32 +62,30 @@
         }).addTo(map);
 
         // 2. Función para cargar y mostrar el Markdown (El Visor)
-        function verFicha(urlRelativa) {
-    // 1. Limpieza de la ruta: nos aseguramos de que termine en .md
-    // y que no tenga barras dobles al inicio
-    let rutaLimpia = urlRelativa.replace('.html', '.md');
-    if (rutaLimpia.startsWith('/')) {
-        rutaLimpia = rutaLimpia.substring(1);
-    }
+       function verFicha(urlRelativa) {
+    // 1. Aseguramos que busque el archivo .md
+    const archivoMD = urlRelativa.replace('.html', '.md');
 
-    // 2. Intentamos cargar el archivo directamente desde la raíz del sitio
-    console.log("Buscando archivo en:", rutaLimpia);
+    // 2. Construimos la URL absoluta basada en la ubicación actual
+    // Esto resuelve el problema del nombre del repositorio automáticamente
+    const urlFinal = window.location.origin + window.location.pathname.replace('index.html', '') + archivoMD;
+    
+    console.log("Cargando ficha desde:", urlFinal);
 
-    fetch(rutaLimpia)
+    fetch(urlFinal)
         .then(res => {
-            if (!res.ok) {
-                throw new Error(`No se encontró el archivo: ${rutaLimpia}. Verifica que en GitHub el archivo se llame exactamente así.`);
-            }
+            if (!res.ok) throw new Error("Archivo no encontrado. Revisa que el nombre coincida exactamente en GitHub.");
             return res.text();
         })
         .then(text => {
-            const cleanText = text.replace(/^---[\s\S]*?---/, '');
-            document.getElementById('contenido-ficha').innerHTML = marked.parse(cleanText);
+            // Limpiar encabezados YAML si existen
+            const contenidoLimpio = text.replace(/^---[\s\S]*?---/, '');
+            document.getElementById('contenido-ficha').innerHTML = marked.parse(contenidoLimpio);
             document.getElementById('ficha-container').style.display = 'block';
         })
         .catch(err => {
             console.error(err);
-            alert("Error: " + err.message);
+            alert("Error al cargar la ficha: " + archivoMD);
         });
 }
 
