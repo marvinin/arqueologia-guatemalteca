@@ -7,13 +7,13 @@
         "name": "Arqueológico Acatan",
         "registro": "1.1.8.1",
         "municipio": "Guatemala",
-        "url": "sitios/Guatemala/arqueologico-acatan.md"
+        "url": "sitios/Guatemala/acatan.md"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -90.526667,
-          14.620833
+          -90.468675,
+          14.625168
         ]
       }
     },
@@ -359,13 +359,13 @@
         "name": "Arqueológico Kaminal Juyú",
         "registro": "1.1.8.24",
         "municipio": "Guatemala",
-        "url": "sitios/Guatemala/arqueologico-kaminal-juyu.md"
+        "url": "sitios/Guatemala/kaminaljuyu.md"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -90.526667,
-          14.620833
+          -90.518360,
+          14.590454
         ]
       }
     },
@@ -428,8 +428,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -90.526667,
-          14.620833
+          -90.548764,
+          14.620685
         ]
       }
     },
