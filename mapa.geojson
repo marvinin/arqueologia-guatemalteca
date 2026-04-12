@@ -7,7 +7,7 @@
         "name": "Arqueológico Kaminal Juyú",
         "registro": "1.1.8.24",
         "municipio": "Guatemala",
-        "url": "sitios/Guatemala/arqueologico-kaminal-juyu.html"
+        "url": "sitios/Guatemala/arqueologico-kaminal-juyu.md"
       },
       "geometry": {
         "type": "Point",
@@ -33,24 +33,11 @@
         "name": "Arqueológico Miraflores",
         "registro": "1.1.8.28",
         "municipio": "Guatemala",
-        "url": "sitios/guatemala/arqueologico-miraflores.html"
+        "url": "sitios/Guatemala/arqueologico-miraflores.md"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [-90.548764, 14.620685]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Arqueológico La Culebra",
-        "registro": "1.1.8.15",
-        "municipio": "Guatemala",
-        "url": "sitios/guatemala/arqueologico-la-culebra.html"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-90.525742, 14.599248]
       }
     }
   ]
