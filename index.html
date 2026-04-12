@@ -63,21 +63,21 @@
 
         // 2. Función para cargar y mostrar el Markdown (El Visor)
         function verFicha(urlRelativa) {
-    // 1. Aseguramos que la extensión sea .md
-    let urlMD = urlRelativa.replace('.html', '.md');
-
-    // 2. IMPORTANTE: Forzamos la ruta desde la raíz si no tiene el slash inicial
-    if (!urlMD.startsWith('/')) {
-        // Obtenemos el nombre del repositorio de la URL actual
-        const repoName = window.location.pathname.split('/')[1];
-        urlMD = '/' + repoName + '/' + urlMD;
+    // 1. Limpieza de la ruta: nos aseguramos de que termine en .md
+    // y que no tenga barras dobles al inicio
+    let rutaLimpia = urlRelativa.replace('.html', '.md');
+    if (rutaLimpia.startsWith('/')) {
+        rutaLimpia = rutaLimpia.substring(1);
     }
-    
-    console.log("Intentando cargar:", urlMD); // Esto te dirá en la consola qué ruta está buscando
 
-    fetch(urlMD)
+    // 2. Intentamos cargar el archivo directamente desde la raíz del sitio
+    console.log("Buscando archivo en:", rutaLimpia);
+
+    fetch(rutaLimpia)
         .then(res => {
-            if (!res.ok) throw new Error("Error " + res.status + ": No se encontró el archivo en " + urlMD);
+            if (!res.ok) {
+                throw new Error(`No se encontró el archivo: ${rutaLimpia}. Verifica que en GitHub el archivo se llame exactamente así.`);
+            }
             return res.text();
         })
         .then(text => {
