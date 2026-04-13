@@ -1,7 +1,7 @@
 
 # Sitio Arqueológico Acatán
 
-![Sitio Arqueologico los Arcos](https://marvinin.github.io/arqueologia-guatemalteca/sitios/Guatemala/larcos00111.jpg)
+![Sitio Arqueologico los Arcos](https://marvinin.github.io/arqueologia-guatemalteca/sitios/Guatemala/aca00111.jpg)
 
 ## Antecedentes de Investigación
 
