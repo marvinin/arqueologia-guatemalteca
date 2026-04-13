@@ -1,6 +1,8 @@
 
 # Sitio Arqueológico Acatán
 
+![Sitio Arqueologico los Arcos](https://marvinin.github.io/arqueologia-guatemalteca/sitios/Guatemala/larcos00111.jpg)
+
 ## Antecedentes de Investigación
 
 Este sitio fue visitado inicialmente por E. Shook en 1942. Posteriormente se realizó un recorrido de reconocimiento por parte de M. Corado (2006).
