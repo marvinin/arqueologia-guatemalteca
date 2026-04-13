@@ -1,6 +1,7 @@
 ## Sitio Arqueológico Los Arcos
 
-![Sitio Arqueologico los Arcos](https://marvinin.github.io/arqueologia-guatemalteca/sitios/Guatemala/sitiolosarcos.jpg)
+![Sitio Arqueologico los Arcos](https://marvinin.github.io/arqueologia-guatemalteca/sitios/Guatemala/larcos00111.jpg)
+
 
 
 # Antecedentes de Investigación
