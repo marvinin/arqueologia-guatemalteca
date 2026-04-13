@@ -29,31 +29,17 @@ La arquitectura en Kaminaljuyu es diversa, y con cambios según su fase construc
 ## Bibliografía relacionada
 
 Escobar Durand, Claudine. (2015) El Patrimonio Arqueológico en el marco del Plan de Ordenamiento Territorial del Municipio de Guatemala". Tesis de         Licenciatura, Universidad de San Carlos deGuatemala. Guatemala. Pp. 65.
-Jacobo, Álvaro (1992) Resultados preliminares de las excavaciones de rescate arqueológico en el área sur de la laguna El Naranjo, Kaminaljuyu. En V Simposio de Investigaciones Arqueológicas en Guatemala, 1991 (editado por J.P. Laporte, H. Escobedo y S. Brady), pp.26-37. Museo
-Nacional de Arqueología y Etnología, Guatemala. Pp.28
-Kaplan, Jonathan (2001) Algunas consideraciones del apogeo “Miraflores” en el Preclásico Tardío de
-Kaminaljuyu. En XIV Simposio de Investigaciones Arqueológicas en Guatemala, 2000 (editado
-por J.P. Laporte, A.C. Suasnávar y B. Arroyo), pp.35-42. Museo Nacional de Arqueología y
-Etnología, Guatemala (versión digital).
-Kidder, Alfred Vincent, (1943), Excavations at Kaminaljuyu, Guatemala, Washington.
-Mora-Marín, David. (2004) Kaminaljuyu Stela 10: Script classification and linguistic affiliation,
-Ancient Mesoamerica.
-Popenoe de Hatch, Marion (1991) El Protoclásico: Nueva evidencia de Kaminaljuyu. En II Simposio
-de Investigaciones Arqueológicas en Guatemala, 1988 (editado por J.P. Laporte, S. Villagrán,
-H. Escobedo, D. de González y J. Valdés), pp.79-83. Museo Nacional de Arqueología y
-Etnología, Guatemala.Shook, E. (1952) Ficha de Registro Arqueologico. CIRMA
-Roma, Otto, (1998), Hallazgos preclásico-medio y evolución cultural al sureste de la Laguna “Los
-Tiestos” de Kaminaljuyu, Guatemala, Tesis de grado, Escuela de Historia.
-Schavelzon, D. Y Rivera, V. (1984) Kaminaljuyu el proceso de destrucción de un sitio arqueológico
-en Guatemala.
-Shook, Edwin. (1952) Lugares Arqueológicos del Altiplano Meridional Central de Guatemala.
-Antropología e Historia de Guatemala. Ministerio de Educación. IDAEH Vol. 2.
-Valdés, Juan Antonio. (1997) El proyecto Miraflores II dentro de marco Preclásico de Kaminaljuyu.
-En X Simposio de Investigaciones Arqueológicas en Guatemala, 1996 (editado por J.P. Laporte
-y H. Escobedo), pp.80-91. Museo Nacional de Arqueología y Etnología, Guatemala (versión
-digital).
-Velásquez, Juan Luis (1993) Un entierro dedicatorio a finales del Preclásico Medio en Kaminaljuyu,
-Guatemala. En III Simposio de Investigaciones Arqueológicas en Guatemala, 1989 (editado
-por J.P. Laporte, H. Escobedo y S. Villagrán), pp.165-174. Museo Nacional de Arqueología y
-Etnología, Guatemala.
+
+Jacobo, Álvaro (1992) Resultados preliminares de las excavaciones de rescate arqueológico en el área sur de la laguna El Naranjo, Kaminaljuyu. En V Simposio de Investigaciones Arqueológicas en Guatemala, 1991 (editado por J.P. Laporte, H. Escobedo y S. Brady), pp.26-37. Museo Nacional de Arqueología y Etnología, Guatemala. Pp.28
+
+Kaplan, Jonathan (2001) Algunas consideraciones del apogeo “Miraflores” en el Preclásico Tardío de Kaminaljuyu. En XIV Simposio de Investigaciones Arqueológicas en Guatemala, 2000 (editadopor J.P. Laporte, A.C. Suasnávar y B. Arroyo), pp.35-42. Museo Nacional de Arqueología y Etnología, Guatemala (versión digital).
+
+Kidder, Alfred Vincent, (1943), Excavations at Kaminaljuyu, Guatemala, Washington. Mora-Marín, David. (2004) Kaminaljuyu Stela 10: Script classification and linguistic affiliation, Ancient Mesoamerica.
+
+Popenoe de Hatch, Marion (1991) El Protoclásico: Nueva evidencia de Kaminaljuyu. En II Simposio de Investigaciones Arqueológicas en Guatemala, 1988 (editado por J.P. Laporte, S. Villagrán, H. Escobedo, D. de González y J. Valdés), pp.79-83. Museo Nacional de Arqueología y Etnología, Guatemala.Shook, E. (1952) Ficha de Registro Arqueologico. CIRMA
+
+Roma, Otto, (1998), Hallazgos preclásico-medio y evolución cultural al sureste de la Laguna “Los Tiestos” de Kaminaljuyu, Guatemala, Tesis de grado, Escuela de Historia. Schavelzon, D. Y Rivera, V. (1984) Kaminaljuyu el proceso de destrucción de un sitio arqueológico en Guatemala. Shook, Edwin. (1952) Lugares Arqueológicos del Altiplano Meridional Central de Guatemala. Antropología e Historia de Guatemala. Ministerio de Educación. IDAEH Vol. 2.
+
+Valdés, Juan Antonio. (1997) El proyecto Miraflores II dentro de marco Preclásico de Kaminaljuyu. En X Simposio de Investigaciones Arqueológicas en Guatemala, 1996 (editado por J.P. Laporte y H. Escobedo), pp.80-91. Museo Nacional de Arqueología y Etnología, Guatemala (versión
+digital). Velásquez, Juan Luis (1993) Un entierro dedicatorio a finales del Preclásico Medio en Kaminaljuyu, Guatemala. En III Simposio de Investigaciones Arqueológicas en Guatemala, 1989 (editado por J.P. Laporte, H. Escobedo y S. Villagrán), pp.165-174. Museo Nacional de Arqueología y Etnología, Guatemala.
 
