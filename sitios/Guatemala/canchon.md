@@ -1,6 +1,7 @@
 # Sitio Arqueológico Canchón
 
-![Alt text](imagen.png)
+![Sitio Canchón](https://marvinin.github.io/arqueologia-guatemalteca/sitios/Guatemala/canch00111.jpg)
+
 
 ## Antecedentes de Investigación
 
