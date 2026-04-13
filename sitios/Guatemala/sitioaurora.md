@@ -3,7 +3,7 @@
 ## Antecedentes de investigaciones en el área
 
 El sitio fue investigado por Shook en 1942 y en 2007 por la estudiante María de los Ángeles Corado de la Universidad del Valle. 
-Shook lo incluyó como parte de los sitios y zonas arqueológicas destinados a ser protegidos.Zona 13 Ciudad Capital. 
+Shook lo incluyó como parte de los sitios y zonas arqueológicas destinados a ser protegidos de la zona 13 de la Ciudad Capital. 
 La diferencia con las coordenadas reportadas por Shook fue de menos 9 metros este-oeste y menos 1 metro norte-sur.
 
 # Principales Hallazgos
