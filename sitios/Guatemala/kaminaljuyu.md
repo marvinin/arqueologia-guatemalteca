@@ -3,7 +3,7 @@
 # Antecedentes de Investigación
 El sitio ha sido investigado desde 1926 y con base en su información, se ha reconstruido parte de la historia de ocupación prehispánica del Valle Central de Guatemala. Ocupaba un territorio amplio en el que actualmente se ubican las zonas 7, 8, 9, 11, 12, 13, 14 de la Ciudad Capital y las zonas 4, 7 y 11 del municipio de Mixco. Este sitio no tiene información de la fecha en la que fue incluido en las fichas de registro de E. Shook El sitio está incluido en el inventario de sitios arqueológicos publicado por Shook y forma parte de los sitios destinados a ser protegidos como parte del Patrimonio Cultural del departamento de Guatemala.
 
-![Kaminaljuyú](/sitios/Guatemala/kj00111.jpg)
+![Kaminaljuyú](https://marvinin.github.io/arqueologia-guatemalteca/sitios/Guatemala/kj00111.jpg)
 
 # Principales Hallazgos
 Kaminaljuyu contaba con aproximadamente 200 montículos que cubrían un área de 4.5 kilómetros. La cantidad de monumentos esculpidos, vasijas cerámicas y evidencia cultural reportada, es abundante y no alcanzarían estas hojas para describir la importancia de cada una de ellas. Es bien sabido que el centro arqueológico de Kaminaljuyu fue el sitio más grande e importante del altiplano central de Guatemala, durante 2000 años que abarcan los periodos Preclásico y Clásico. Lainformación aportada por anteriores proyectos, está permitiendo comprender de forma más amplia qué fue lo que pasó en el sitio.
