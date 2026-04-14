@@ -4,10 +4,10 @@
 > **Ubicación:** [Municipio], Guatemala  
 
 
-
+| Sitio  | Bethania | Nombre Original | Sin información |
 | :--- | :--- | :--- | :--- |
-| Fila 1 | Dato | Dato | Dato |
-| Fila 2 | Dato | Dato | Dato |
+| Región | Tierras Altas | Temporalidad | Sin información |
+| Municipio | Guatemala | Primer Reporte | 1942 |
 | Fila 3 | Dato | Dato | Dato |
 | Fila 4 | Dato | Dato | Dato |
 | Fila 5 | Dato | Dato | Dato |
