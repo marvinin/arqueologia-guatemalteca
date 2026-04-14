@@ -6,13 +6,14 @@
 
 
 | :--- | :--- | :--- | :--- |
-| sitio  | Bethania  | Nombre Original  | Sin Información |
-| Región | Tierras Altas | Primer Reporte | 1942 |
-| Municipio | Dato | Dato | Dato |
-| Monumentos | Sin Información | Pblado | Dato |
+| Fila 1 | Dato | Dato | Dato |
+| Fila 2 | Dato | Dato | Dato |
+| Fila 3 | Dato | Dato | Dato |
+| Fila 4 | Dato | Dato | Dato |
 | Fila 5 | Dato | Dato | Dato |
 | Fila 6 | Dato | Dato | Dato |
 | Fila 7 | Dato | Dato | Dato |
+
 
 
 
