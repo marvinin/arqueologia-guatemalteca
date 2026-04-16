@@ -1,5 +1,18 @@
 # Sitio Arqueológico Kaminaljuyú
 
+> **Registro IDAEH:** 1.1.8.24
+> **Ubicación:** [Guatemala], Guatemala  
+
+
+| Sitio | Kaminaljuyú | Nombre Original | Sin información |
+| :--- | :--- | :--- | :--- |
+| Región | Tierras Altas | Temporalidad | Dato |
+| Municipio | Guatemala | Primer Reporte | 1926 |
+| Ubicación | Coordenadas | No. de Registro| 1.1.8.24 |
+| Monumentos | Estelas, Altares, mascarones | Poblado Proximo | Ciudad de Guatemala |
+| Juego de Pelota | 3 | Edificios | 200 + |
+| Arte Rupestre | --- | Plazas | --- |
+
 ## Antecedentes de Investigación
 El sitio ha sido investigado desde 1926 y con base en su información, se ha reconstruido parte de la historia de ocupación prehispánica del Valle Central de Guatemala. Ocupaba un territorio amplio en el que actualmente se ubican las zonas 7, 8, 9, 11, 12, 13, 14 de la Ciudad Capital y las zonas 4, 7 y 11 del municipio de Mixco. Este sitio no tiene información de la fecha en la que fue incluido en las fichas de registro de E. Shook El sitio está incluido en el inventario de sitios arqueológicos publicado por Shook y forma parte de los sitios destinados a ser protegidos como parte del Patrimonio Cultural del departamento de Guatemala.
 
