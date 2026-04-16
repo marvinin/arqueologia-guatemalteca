@@ -1,5 +1,7 @@
 # Sitio Arqueológico Aycinena# [Nombre del Sitio]
 
+![Sitio Arqueologico los Arcos](https://marvinin.github.io/arqueologia-guatemalteca/sitios/Guatemala/sitioaycinena00111.jpg)
+
 > **Registro IDAEH:** [Número de Registro]  
 > **Ubicación:** [Municipio], Guatemala  
 
